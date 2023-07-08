@@ -23,8 +23,6 @@ const todoListSlice = createSlice({
       state.items = localStorageItems;
     },
     editAddToList(state, action) {
-      console.log(state.id);
-      console.log(action.payload.title);
       const newItem = {
         id: state.id,
         title: action.payload.title,
@@ -84,9 +82,7 @@ const todoListSlice = createSlice({
       const tempItems = state.items.filter((item) => item.id !== id);
       state.items = tempItems;
       const localStorageItems = JSON.parse(localStorage["todos"]);
-      console.log(localStorageItems);
       for (let element of localStorageItems) {
-        console.log(element);
         if (element.id === id) {
           localStorageItems.splice(element, 1);
         }
