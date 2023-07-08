@@ -1,0 +1,13 @@
+.list-group-item {
+  background: linear-gradient(to right, #ff5f6d, #ffc371);
+  color: #fff;
+}
+
+.custom-button {
+  background: linear-gradient(to right, #ff5f6d, #ffc371);
+  color: #fff;
+}
+.custom-button-clear {
+  background: linear-gradient(to right, #f02630, #cc374b);
+  color: #fff;
+}
